@@ -1,8 +1,12 @@
 import React, { Component } from 'react'
 
 class App extends Component {
+  state = {
+    name: 'Woo'
+  }
   render() {
-    return <h1>React App</h1>
+    const { name } = this.state
+    return <h1>{name}</h1>
   }
 }
 
